@@ -1,0 +1,574 @@
+/*盒子样式*/
+.flexStyle(@justify) {
+  display: flex;
+  justify-content: @justify;
+  align-items: center;
+}
+
+/*a链接样式*/
+.aStyle() {
+  text-decoration: none;
+  display: block;
+}
+
+/*列表样式*/
+.listStyle() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*标题样式*/
+.hStyle(@hCorlor) {
+  margin: auto;
+  font-size: 3.5rem;
+  color: @hCorlor;
+  width: 28.6rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: left;
+  text-indent: 10rem;
+  border-bottom-width: 31rem;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+/*小标题*/
+.subTitle(@sColor) {
+  margin: auto;
+  //margin-right: 2rem;
+  font-size: 1.4rem;
+  color: @sColor;
+  text-align: center;
+  //width: 70%;
+  line-height: 2rem;
+}
+
+/*小标题框样式*/
+.tFrame() {
+  width: 28.6rem;
+  //height: 4rem;
+  //border-right: 1px solid #eee;
+  margin: auto;
+}
+
+/*文字内容样式*/
+.substanceStyle() {
+  font-size: 1.6px;
+  color: #333333;
+  text-align: justify;
+  text-indent: 30px;
+  margin: auto;
+}
+
+div {
+  /*关于公司*/
+
+  .firmPc {
+    .firmContent {
+
+      width: 80%;
+      .flexStyle(space-between);
+      margin: auto;
+      margin-top: 50px;
+
+      /*左边*/
+
+      .firmPcLeft {
+        width: 40%;
+        margin: auto;
+        // margin-right: 5rem;
+        text-align: center;
+        background-color: #fff;
+        // background-color: cadetblue;
+
+        .detail {
+          width: 100%;
+
+          // background-color: blue;
+          /*大标题*/
+
+          h3 {
+            .hStyle(#4287d5);
+          }
+
+          /*小标题*/
+
+          .subtitle {
+            .tFrame();
+
+            h6 {
+              .subTitle(#666666);
+            }
+          }
+
+          /*内容*/
+
+          .substance {
+            width: 70%;
+            .substanceStyle();
+            margin-top: 2rem;
+          }
+
+        }
+
+        .more {
+          margin-top: 3.1rem;
+        }
+      }
+
+      /*右边公司介绍*/
+
+      .firmPcRight {
+        width: 60%;
+        margin: auto;
+        margin-top: -20rem;
+        z-index: 1;
+        // background-color: darkturquoise;
+
+        .detail {
+          width: 80%;
+          background-color: #fff;
+
+          h5 {
+            width: 28.6rem;
+            margin: auto 4rem;
+            padding-top: 2rem;
+            font-size: 2rem !important;
+            text-align: center;
+            color: #000 !important;
+          }
+
+          p {
+            width: 28.6rem;
+            margin: 2rem auto;
+            font-size: 1.6rem;
+            color: #333;
+            text-indent: 3rem;
+            text-align: justify;
+          }
+        }
+
+        .pic {
+          width: 50%;
+          height: 25rem;
+          margin: auto;
+          margin-top: 25rem;
+          border: 1px solid #c0d7f1;
+
+          img {
+            width: 100%;
+            margin: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  /*业务体系*/
+
+  .service {
+    width: 100%;
+    height: 60rem;
+    background-image: url(../img/bg2_02.png);
+    background-size: 100%;
+
+    .opration {
+      width: 80%;
+      height: 40rem;
+      margin: auto;
+      margin-top: 3rem;
+
+
+      /*小标题*/
+
+      .subtitle {
+        padding-top: 5rem;
+        .tFrame();
+
+        h3 {
+          .hStyle(#fff);
+        }
+
+        h6 {
+          .subTitle(#fff);
+          border-right: 1px solid #eee;
+        }
+      }
+
+      .oprationInfo {
+        width: 85%;
+        margin: auto;
+        margin-top: 5rem;
+        .flexStyle(space-between);
+
+        .o-link {
+          width: 9rem;
+          height: 12rem;
+
+          .icon {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            text-align: center;
+            margin: auto;
+            background-color: #fff;
+
+            a {
+              width: 100%;
+              height: 100%;
+              line-height: 8rem;
+
+              img {
+                width: 50%;
+              }
+            }
+          }
+
+          .i-active {
+            background-color: #4287d5;
+          }
+
+          p {
+            text-align: center;
+            margin: 4rem auto;
+            font-size: 2rem;
+            color: #fff;
+          }
+        }
+      }
+
+    }
+  }
+
+  /*优秀作品*/
+
+  .worksPc {
+    width: 80%;
+    margin: auto;
+
+    /*标题*/
+
+    .title {
+      width: 50%;
+      margin-top: -8rem;
+      background: #fff;
+
+      /*大标题*/
+
+      h3 {
+        .hStyle(#4287d5);
+      }
+
+      /*小标题*/
+
+      .subtitle {
+        .tFrame();
+
+        h6 {
+          .subTitle(#666666);
+        }
+      }
+    }
+
+    /*优秀作品导航链接*/
+
+    ul {
+      height: 5rem;
+      .flexStyle(flex-start);
+      margin: 1rem auto;
+
+      li {
+        background-color: #f5f5f5;
+        .listStyle();
+        margin-right: 2rem;
+
+        a {
+          .aStyle();
+          font-size: 1.6rem;
+          color: #333333;
+          padding: 0.5rem;
+        }
+
+        .workLink {
+          color: #fff;
+          background: #313131;
+        }
+      }
+
+      li:last-child {
+        margin-left: auto;
+      }
+
+      // li:last-child:hover{
+      //     background-color: #fff;
+      //     .workMore{
+      //         color:#333;
+      //     }
+
+      // }
+      li:hover {
+        background-color: #313131;
+
+        a {
+          color: #fff;
+        }
+      }
+
+
+    }
+
+    .workDetail {
+      width: 100%;
+      padding: 1rem;
+      background: #fff;
+      .flexStyle(space-between);
+
+      .work {
+        width: 30%;
+        text-align: center;
+        color: #333;
+        font-size: 0.5rem;
+        background: #eee;
+
+        img {
+          width: 90%;
+          padding-top: 1rem;
+          margin: auto;
+        }
+
+        p {
+          padding: 1rem;
+        }
+      }
+
+      .work:hover {
+        background: #313131;
+        color: #fff;
+      }
+
+      .w-active {
+        background: #313131;
+        color: #fff;
+      }
+    }
+  }
+
+  /*人才共享*/
+
+  .personnel {
+    width: 100%;
+    height: 40rem;
+    background-image: url(../img/bg3_02.png);
+    background-size: 100%;
+
+    .personPc {
+      width: 80%;
+      margin: auto;
+
+      /*标题*/
+
+      .title {
+
+        // width:50%;
+        // margin-top:-18rem;
+        // background: #fff;
+        /*大标题*/
+
+        h3 {
+          .hStyle(#fff);
+        }
+
+        /*小标题*/
+
+        .subtitle {
+          .tFrame();
+
+          h6 {
+            .subTitle(#fff);
+          }
+        }
+      }
+
+      /*人才信息*/
+
+      .pList {
+        width: 90%;
+        height: 20rem;
+        margin: auto;
+        // border: 1px solid red;
+        .flexStyle(flex-start);
+
+        .pInfo {
+          width: 30%;
+          margin: 2rem auto;
+          // border: 1px solid blue;
+
+          a {
+            width: 100%;
+            height: 13rem;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+            img {
+              width: 90%;
+            }
+          }
+
+
+          p {
+            width: 90%;
+            text-align: center;
+            position: relative;
+            top: -5rem;
+            margin: auto;
+            height: 3.6rem;
+            line-height: 3.6rem;
+            background: #333;
+            color: #fff;
+            display: none;
+          }
+        }
+
+        .pAction {
+          margin-top: 5.5rem;
+
+          a {
+            width: 100%;
+            height: 13rem;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+            img {
+              // width:100%;
+              transform: scale(1.5);
+            }
+          }
+
+          p {
+            display: block;
+            transform: scale(1.5);
+            top: -3.1rem;
+            background: #333;
+            color: #fff;
+          }
+        }
+
+      }
+
+      /*轮播下标*/
+
+      ul {
+        width: 26rem;
+        margin: auto !important;
+        .flexStyle(space-between);
+        .listStyle;
+
+        li {
+          width: 7rem;
+          border-bottom: 2px solid #fff;;
+        }
+
+        .active {
+          border-bottom-color: #4287d5;
+        }
+      }
+    }
+  }
+
+  /*新闻动态*/
+
+  .newsPc {
+    width: 80%;
+    margin: auto;
+    // border: 1px solid red;
+
+    /*标题*/
+
+    .title {
+      width: 50%;
+      margin-top: -8rem;
+      background: #fff;
+
+      // margin-right:0;
+      /*大标题*/
+
+      h3 {
+        .hStyle(#4287d5);
+      }
+
+      /*小标题*/
+
+      .subtitle {
+        .tFrame();
+
+        h6 {
+          .subTitle(#666666);
+        }
+      }
+    }
+
+    .newsNav {
+      ul {
+        padding-top: 1rem;
+        height: 5rem;
+        .flexStyle(flex-start);
+        .listStyle();
+        margin: 1rem auto;
+
+        // .flexStyle(flex-start);
+        li {
+          background-color: #f5f5f5;
+          .listStyle();
+          margin-right: 2rem;
+
+          a {
+            .aStyle();
+            font-size: 1.6rem;
+            color: #333333;
+            padding: 0.5rem;
+          }
+
+          .newLink {
+            color: #fff;
+            background: #313131;
+          }
+        }
+
+        li:last-child {
+          margin-left: auto;
+        }
+
+        li:hover {
+          background-color: #313131;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .newsInfo {
+      width: 100%;
+      .flexStyle(space-between);
+
+      .newInfo {
+        width: 30%;
+        margin: 1rem;
+
+        .newContent {
+          width: 90%;
+
+          a {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

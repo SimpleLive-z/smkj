@@ -1,0 +1,53 @@
+div {
+  /*侧边栏样式*/
+
+  .aside_bg {
+    width: 40px;
+    height: 180px;
+    background: #7f7f7f;
+    //display: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+  }
+
+  .aside {
+    //display: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+
+    .aside_icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 60px;
+      cursor: pointer;
+
+      .aside_contact {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #7f7f7f;
+        color: #fff;
+
+        img {
+          display: inline-block;
+          margin: auto 5px;
+          width: 30px;
+          height: 30px;
+        }
+
+        span {
+          display: inline-block;
+          margin-right: 5px;
+          width: 64px;
+        }
+      }
+    }
+  }
+}
