@@ -1,0 +1,156 @@
+/*盒子样式*/
+/*列表样式*/
+/*a链接样式*/
+div .footerPc {
+  width: 100%;
+  margin: auto;
+  margin-top: 5rem;
+  background: #1b1b1b;
+  /*建议*/
+  /*各种联系方式*/
+  /*底部链接及二维码*/
+}
+div .footerPc .suggest {
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+}
+div .footerPc .suggest form {
+  padding: 2.5rem 0;
+}
+div .footerPc .suggest form input[type="text"] {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #d0d0d0;
+}
+div .footerPc .suggest form input[type="submit"] {
+  background: dodgerblue;
+  border: 0;
+  border-radius: 3px;
+}
+div .footerPc .contact {
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div .footerPc .contact .info {
+  margin: auto;
+  text-align: center;
+}
+div .footerPc .contact .info a {
+  height: 2.8rem;
+}
+div .footerPc .contact .info a img {
+  display: block;
+  margin: auto;
+  width: 2.5rem;
+  height: 2.8rem;
+}
+div .footerPc .contact .info .foot_details {
+  visibility: hidden;
+  width: 21rem;
+  margin: 1rem 0;
+}
+div .footerPc .contact .info .foot_details p {
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #fff;
+}
+div .footerPc .contact .info .foot_details p:first-child {
+  margin: auto;
+  width: 3rem;
+  border-bottom: 4px solid #fff;
+}
+div .footerPc hr {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff !important;
+  position: relative;
+  top: -4rem;
+}
+div .footerPc .footLink {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  /*左部链接*/
+  /*二维码*/
+}
+div .footerPc .footLink .leftLink {
+  width: 40%;
+  height: 16rem;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: flex-start !important;
+}
+div .footerPc .footLink .leftLink .oprations {
+  margin: auto;
+  height: 100%;
+  margin-left: 7rem;
+}
+div .footerPc .footLink .leftLink .oprations h4 {
+  font-size: 1.6rem !important;
+  color: #fff !important;
+}
+div .footerPc .footLink .leftLink .oprations ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div .footerPc .footLink .leftLink .oprations ul li a {
+  font-size: 1.4rem;
+  color: #eee;
+}
+div .footerPc .footLink .leftLink .aboutWe {
+  margin: auto;
+  height: 100%;
+}
+div .footerPc .footLink .leftLink .aboutWe h4 {
+  font-size: 1.6rem !important;
+  color: #fff !important;
+}
+div .footerPc .footLink .leftLink .aboutWe ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div .footerPc .footLink .leftLink .aboutWe ul li a {
+  font-size: 1.4rem;
+  color: #eee;
+}
+div .footerPc .footLink .codes {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+div .footerPc .footLink .codes .codeLeft {
+  margin: auto;
+}
+div .footerPc .footLink .codes .codeLeft p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fefefe;
+  margin-top: 2rem;
+}
+div .footerPc .footLink .codes .codeRight {
+  margin: auto;
+}
+div .footerPc .footLink .codes .codeRight p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fefefe;
+  margin-top: 2rem;
+}
+div .footerPc .banq {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+}

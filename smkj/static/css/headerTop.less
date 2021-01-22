@@ -1,0 +1,74 @@
+/*盒子样式*/
+.flexStyle(@justify) {
+  display: flex;
+  justify-content: @justify;
+  align-items: center;
+}
+
+/*列表样式*/
+.listStyle() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*a链接样式*/
+.aStyle() {
+  text-decoration: none;
+  display: block;
+}
+div{
+  padding:0;
+  margin:0;
+  /*pc顶部*/
+  .topbarpc {
+    width: 100%;
+    margin: 2rem auto;
+    .flexStyle(space-between);
+
+    .topLink {
+      width: 50%;
+      height: 5rem;
+      // background: darkkhaki;
+
+      ul {
+        height: 5rem;
+        .flexStyle(space-between);
+        .listStyle();
+
+        li {
+          // background-color: yellowgreen;
+          .flexStyle(space-between);
+
+          a {
+            .aStyle();
+            font-size: 1.6rem;
+            color: #000;
+            padding: 0.5rem;
+          }
+        }
+
+        li:hover {
+          a {
+            color: #4287d5;
+          }
+        }
+
+        .active {
+          a {
+            color: #4287d5;
+          }
+        }
+
+        .active:before {
+          content: "";
+          display: inline-block;
+          width: 1.5rem;
+          margin-right: 2px;
+          border-bottom: 1px solid #4287d5;
+
+        }
+      }
+    }
+  }
+}
